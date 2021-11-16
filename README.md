@@ -1,3 +1,13 @@
+
+First, get started with Metaflow by executing these simple flows:
+
+1. `helloworld.py` - a simple hello world flow
+2. `counter_branch.py` - test artifacts
+3. `parameters.py` - test parameters
+4. `foreach.py` - test foreaches (parallel tasks)
+
+After these simple examples, you can take a look at a more realistic case:
+
 In this tutorial, we'll fine-tune a sentiment analysis model on top of
 HuggingFace's DistilBERT model with the IMDB dataset.
 
@@ -13,9 +23,4 @@ to train a model on 100 samples locally.
 
 We'll show how Metaflow automatically saves trained models which we can access for predictions.
 
-[TODO] We'll use @batch to train the full dataset (40,000 samples) on AWS.
-We'll need GPU since it'll take a while for the full data on CPU.
 
-To Ville:
-* Would you be able to help me with AWS?
-I can also look into setting up my AWS -- I just figure you might already have something running!
