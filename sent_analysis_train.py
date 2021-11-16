@@ -2,12 +2,11 @@
 This workflow takes about 7 minutes on a Mac, of which 6 minutes are training.
 
 Without Metaflow, we have a few problems:
-1. How to use multiple workers to speed up the process?
-2. If we want to run the code on AWS, we'll have to create containers
-3. Have to explicitly save model/tokenizer and load them again for prediction
+1. If we want to run the code on AWS, we'll have to create containers
+2. Have to explicitly save model/tokenizer and load them again for prediction
 (see sent_analysis_predict.py)
 
-When the model is training, let's show people how to convert this to Metaflow.
+When the model is training, let's show how to convert this to Metaflow.
 (see sent_analysis_metaflow.py)
 """
 
