@@ -1,3 +1,13 @@
+
+First, get started with Metaflow by executing these simple flows:
+
+1. `helloworld.py` - a simple hello world flow
+2. `counter_branch.py` - test artifacts
+3. `parameters.py` - test parameters
+4. `foreach.py` - test foreaches (parallel tasks)
+
+After these simple examples, you can take a look at a more realistic case:
+
 In this tutorial, we'll fine-tune a sentiment analysis model on top of
 HuggingFace's DistilBERT model with the IMDB dataset.
 
