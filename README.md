@@ -23,4 +23,5 @@ to train a model on 100 samples locally.
 
 We'll show how Metaflow automatically saves trained models which we can access for predictions.
 
-
+We'll use @batch to train the full dataset (40,000 samples) on AWS.
+We'll need GPU since it'll take a while for the full data on CPU.
