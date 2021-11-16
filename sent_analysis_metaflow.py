@@ -18,7 +18,6 @@ Metaflow will automatically take care of the following:
 
 
 Note: all attributes of a FlowSpec (self.) will be pickled, so don't assign complex objects to self.
-    Q: What if I need to?
 """
 from metaflow import FlowSpec, IncludeFile, Parameter, step
 
@@ -33,8 +32,6 @@ BASE_MODEL = "distilbert-base-uncased"
 class IMDbDataset(torch.utils.data.Dataset):
     @utils.timeit
     def __init__(self, tokenizer, split):
-        print(type(split))
-        print(split.head())
         self.encodings = tokenizer(list(split.review), truncation=True, padding=True)
         self.labels = list(split.sentiment)
 
